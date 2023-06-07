@@ -215,6 +215,104 @@ h4 {
         font-size: 25px;
 }
 
-#overview > div > div > p {
+#overview>div>div>p {
         margin-top: 10px;
+}
+
+#g-s {
+        display: block;
+        position: relative;
+        margin-top: 150px;
+        width: 80vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+}
+
+#g-s > h3 {
+        text-align: left;
+}
+
+#g-s-p {
+        margin-top: 60px;
+        width: 50vw;
+        line-height: 30px;
+}
+
+#g-s-list {
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 43vw;
+
+}
+
+.g-s-list-item {
+        margin-top: 20px;
+        list-style-type: circle;
+        position: relative;
+
+}
+
+.g-s-list-item > p {
+        display: block;
+        position: absolute;
+        top: 0px;
+}
+
+.g-s-btn {
+        position: relative;
+        margin-top: 60px;
+        left: 50%;
+        transform: translate(-50%, 0);
+}
+
+footer {
+        margin-top: 150px;
+        text-align: center;
+        height: 88vh;
+}
+
+#footer-menu {
+        display: flex;
+        position: relative;
+        margin-top: 60px;
+        width: 80vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+        justify-content: center;
+}
+
+.footer-menu-cont {
+        width: 20vw;
+}
+
+.footer-menu-cont > h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 18px;
+}
+
+.footer-menu-tag-cont {
+        margin-top: 10px;
+}
+
+#support {
+        margin-top: 60px;
+}
+
+#support > p {
+        font-size: 20px;
+}
+
+#support > p > span {
+        font-weight: 500;
+}
+
+#donate-btn {
+        margin-top: 30px;
+        margin-right: 0px;
+        width: 120px;
+}
+
+#footer-bottom {
+        margin-top: 40px;
 }
