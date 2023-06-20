@@ -91,6 +91,16 @@ html {
         border-radius: 10px;
 }
 
+#main-wrapper {
+        position: relative;
+        display: block;
+        max-width: 1200px;
+        min-width: 800px;
+        height: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
 #head {
         display: block;
         position: fixed;
@@ -107,8 +117,8 @@ html {
 #main-img-cont {
         position: absolute;
         display: block;
-        top: -78px;
-        left: 57vw;
+        top: 20px;
+        left: 500px;
 }
 
 #main-img-1 {
@@ -138,7 +148,7 @@ html {
         display: block;
         position: absolute;
         top: 21px;
-        left: 10vw;
+        left: 60px;
         font-size: 30px;
         font-weight: 700;
 }
@@ -161,7 +171,7 @@ html {
         position: absolute;
         width: fit-content;
         top: 36px;
-        right: calc(10vw + 58px);
+        right: 20px;
         font-size: 16px;
 }
 
@@ -185,16 +195,7 @@ html {
 }
 
 .menu-item:hover::after {
-        width: 80%;
-}
-
-#language {
-        display: block;
-        position: absolute;
-        right: 10vw;
-        top: 36px;
-        font-weight: 600;
-        font-size: 16px;
+        width: 100%;
 }
 
 #main {
@@ -214,10 +215,9 @@ html {
         display: block;
         width: fit-content;
         position: relative;
-        margin-left: 10vw;
-        margin-top: 160px;
+        left: 60px;
         font-size: 30px;
-        top: 32px;
+        top: 220px;
 }
 
 .gold-gradient-text {
@@ -231,8 +231,8 @@ html {
 #options-cont {
         display: block;
         position: relative;
-        margin-top: 205px;
-        margin-left: 10vw;
+        top: 400px;
+        left: 60px;
 }
 
 .options-btn {
