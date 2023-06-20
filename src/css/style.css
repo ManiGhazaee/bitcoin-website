@@ -20,6 +20,7 @@ html {
         background-color: rgba(0, 0, 0);
         color: aliceblue;
         font-family: "SplineSans", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
 }
 
 *,
@@ -117,8 +118,9 @@ html {
 #main-img-cont {
         position: absolute;
         display: block;
-        top: 20px;
-        left: 500px;
+        top: 100px;
+        left: 55%;
+        transform: translateX(-50%);
 }
 
 #main-img-1 {
@@ -318,6 +320,7 @@ html {
         left: 50%;
         transform: translate(-50%, 0);
         text-align: center;
+        margin-top: 300px;
 }
 
 h3 {
@@ -329,14 +332,17 @@ h3 {
         display: flex;
         position: relative;
         width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
 }
 
 .ov-item {
-        display: inline-block;
-        margin: 120px 3vw;
-        padding: 80px 60px;
-        border: 1px solid #fff;
-        border-radius: 8px;
+        width: 220px;
+    display: inline-block;
+    margin: 120px 50px;
+    padding: 80px 60px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
 }
 
 .ov-item>img {
@@ -390,7 +396,7 @@ h4 {
 #g-s {
         display: block;
         position: relative;
-        margin-top: 150px;
+        margin-top: 180px;
         width: 80vw;
         left: 50%;
         transform: translate(-50%, 0);
@@ -398,11 +404,13 @@ h4 {
 
 #g-s>h3 {
         text-align: center;
+        margin-bottom: 110px;
 }
 
 #g-s-p {
         margin-top: 60px;
-        width: 50vw;
+        max-width: 1080px;
+        width: 50%;
         text-align: justify;
         line-height: 30px;
         left: 50%;
@@ -447,7 +455,7 @@ footer {
         display: flex;
         position: relative;
         margin-top: 60px;
-        width: 80vw;
+        width: 80%;
         left: 57%;
         transform: translate(-50%, 0);
         justify-content: center;
