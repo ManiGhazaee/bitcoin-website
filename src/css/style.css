@@ -99,21 +99,21 @@ html {
         min-width: 800px;
         height: fit-content;
         left: 50%;
+        top: -90px;
         transform: translateX(-50%);
 }
 
 #head {
         display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: sticky;
+        top: 0px;
+        margin: 0px auto;
         height: 90px;
-        width: 100%;
-        background: linear-gradient(to bottom, #000 -20%, #00000000 100%);
+        min-width: 800px;
+        max-width: 1200px;
+        background: linear-gradient(to bottom, #000 -10%, #00000000 100%);
         z-index: 90;
 }
-
-
 
 #main-img-cont {
         position: absolute;
@@ -338,11 +338,11 @@ h3 {
 
 .ov-item {
         width: 220px;
-    display: inline-block;
-    margin: 120px 50px;
-    padding: 80px 60px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 8px;
+        display: inline-block;
+        margin: 120px 50px;
+        padding: 80px 60px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 8px;
 }
 
 .ov-item>img {
