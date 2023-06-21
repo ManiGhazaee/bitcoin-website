@@ -106,13 +106,22 @@ html {
 #head {
         display: block;
         position: sticky;
-        top: 0px;
+        top: -80px;
         margin: 0px auto;
         height: 90px;
         min-width: 800px;
         max-width: 1200px;
         background: linear-gradient(to bottom, #000 -10%, #00000000 100%);
         z-index: 90;
+        opacity: 0;
+        animation: head 1000ms 1000ms 1 forwards;
+}
+
+@keyframes head {
+        100% {
+                opacity: 1;
+                top: 0px;
+        }
 }
 
 #main-img-cont {
@@ -128,7 +137,20 @@ html {
         width: 255px;
         top: 67px;
         left: -1.01vw;
-        opacity: 0.3;
+        opacity: 0;
+        animation: main-img-1 1200ms 500ms 1 forwards;
+}
+
+@keyframes main-img-1 {
+        33% {
+                opacity: 0.3;
+        }
+        66% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 0.3;
+        }
 }
 
 #main-img-2 {
@@ -136,6 +158,20 @@ html {
         width: 356px;
         top: 0vw;
         left: 0px;
+        opacity: 0;
+        animation: main-img-2 1200ms 600ms 1 forwards;
+}
+
+@keyframes main-img-2 {
+        33% {
+                opacity: 1;
+        }
+        66% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 1;
+        }
 }
 
 #main-img-3 {
@@ -143,7 +179,20 @@ html {
         width: 180px;
         top: 114px;
         left: -2.025vw;
-        opacity: 0.2;
+        opacity: 0;
+        animation: main-img-3 1200ms 400ms 1 forwards;
+}
+
+@keyframes main-img-3 {
+        33% {
+                opacity: 0.2;
+        }
+        66% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 0.2;
+        }
 }
 
 #logo-cont {
@@ -217,10 +266,22 @@ html {
         display: block;
         width: fit-content;
         position: relative;
-        left: 60px;
+        left: 40px;
         font-size: 30px;
         top: 220px;
+        overflow: hidden;
+        opacity: 0;
+        animation: summery 800ms 100ms 1 forwards;
 }
+
+@keyframes summery {
+        100% {
+                opacity: 1;
+                left: 60px;
+        }
+}
+
+
 
 .gold-gradient-text {
         background: linear-gradient(270.97deg,
@@ -251,6 +312,45 @@ html {
         font-size: 16px;
         transition: 200ms;
         cursor: pointer;
+}
+
+.options-btn:nth-child(1) {
+        opacity: 0;
+        margin-left: -60px;
+        animation: options-btn-1 400ms 1200ms 1 forwards;
+}
+
+.options-btn:nth-child(2) {
+        opacity: 0;
+        margin-left: -60px;
+        animation: options-btn-2 400ms 1300ms 1 forwards;
+}
+
+.options-btn:nth-child(3) {
+        opacity: 0;
+        margin-left: -60px;
+        animation: options-btn-3 400ms 1400ms 1 forwards;
+}
+
+@keyframes options-btn-1 {
+        100% {
+                opacity: 1;
+                margin-left: 0px;
+        }
+}
+
+@keyframes options-btn-2 {
+        100% {
+                opacity: 1;
+                margin-left: 0px;
+        }
+}
+
+@keyframes options-btn-3 {
+        100% {
+                opacity: 1;
+                margin-left: 0px;
+        }
 }
 
 .options-btn:hover {
