@@ -109,7 +109,7 @@ html {
         top: -80px;
         margin: 0px auto;
         height: 90px;
-        min-width: 800px;
+        min-width: 10px;
         max-width: 1200px;
         background: linear-gradient(to bottom, #000 -10%, #00000000 100%);
         z-index: 90;
@@ -687,4 +687,33 @@ footer {
 
 .to-top-visible {
         transform: translateY(0px);
+}
+
+#dropdown-icon {
+        position: absolute;
+        display: none;
+        cursor: pointer;
+        top: 36px;
+        right: 20px;
+        font-size: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+        .ov-item {
+                margin: 120px 10px;
+        }
+}
+
+@media only screen and (max-width: 800px) {
+        .ov-item {
+                margin: 120px 10px;
+        }
+
+        #dropdown-icon {
+                display: inline-block;
+        }
+
+        #menu {
+                display: none;
+        }
 }
