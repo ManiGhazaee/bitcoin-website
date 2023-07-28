@@ -103,10 +103,11 @@ html {
 }
 
 .header-container {
-        width: 1600px;
+        max-width: 1600px;
         height: 100%;
         display: flex;
         justify-content: space-around;
+        margin: 0 auto;
 }
 
 #menu {
@@ -118,21 +119,59 @@ html {
 #logo-cont {
         display: flex;
         align-items: center;
-        height: 3rem;
-        width: 2rem;
+        margin-right: 22rem;
 }
 
 #main-logo {
-       object-fit: contain;
+        width: 22px;
+        height: 30.41px;
 }
 
-#logo-cont>span {}
-
+#logo-cont>span {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+}
 
 #language {
         display: block;
         font-weight: 600;
         font-size: 16px;
+}
+
+.menu-item {
+        position: relative;
+        display: inline-block;
+        margin-right: 16px;
+        font-weight: 600;
+}
+
+.menu-item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        background-color: #ffd700;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: 200ms;
+}
+
+.menu-item:hover::after {
+        width: 80%;
+}
+
+#main {
+        position: relative;
+        display: block;
+        z-index: 80;
+        width: 100%;
+}
+
+.main-container {
+        max-width: 1600px;
+        margin: 0 auto;
 }
 
 #main-img-cont {
@@ -165,39 +204,6 @@ html {
         opacity: 0.2;
 }
 
-
-
-.menu-item {
-        position: relative;
-        display: inline-block;
-        margin-right: 16px;
-        font-weight: 600;
-}
-
-.menu-item::after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 0%;
-        background-color: #ffd700;
-        left: 50%;
-        transform: translate(-50%, 0);
-        transition: 200ms;
-}
-
-.menu-item:hover::after {
-        width: 80%;
-}
-
-
-
-#main {
-        position: relative;
-        display: block;
-        z-index: 80;
-}
-
 #first-page {
         display: block;
         position: relative;
@@ -209,7 +215,7 @@ html {
         display: block;
         width: fit-content;
         position: relative;
-        margin-left: 10vw;
+        margin-left: 150px;
         margin-top: 160px;
         font-size: 30px;
         top: 32px;
@@ -227,7 +233,7 @@ html {
         display: block;
         position: relative;
         margin-top: 205px;
-        margin-left: 10vw;
+        margin-left: 150px;
 }
 
 .options-btn {
@@ -307,12 +313,15 @@ html {
 }
 
 #overview {
-        display: block;
+        /* display: block;
         position: relative;
         width: fit-content;
         left: 50%;
         transform: translate(-50%, 0);
-        text-align: center;
+        text-align: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 h3 {
@@ -383,12 +392,16 @@ h4 {
 }
 
 #g-s {
-        display: block;
+        /* display: block;
         position: relative;
         margin-top: 150px;
         width: 80vw;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 0); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
 }
 
 #g-s>h3 {
@@ -396,13 +409,17 @@ h4 {
 }
 
 #g-s-p {
-        margin-top: 60px;
+        /* margin-top: 60px;
         width: 50vw;
         text-align: justify;
         line-height: 30px;
         left: 50%;
         transform: translate(-50%, 0);
-        position: relative;
+        position: relative; */
+        margin-top: 60px;
+        text-align: justify;
+        line-height: 30px;
+        width: 50%;
 }
 
 #g-s-list {
@@ -435,17 +452,25 @@ h4 {
 footer {
         margin-top: 310px;
         text-align: center;
-        height: 88vh;
+        height: 100%;
 }
 
-#footer-menu {
+.footer-container {
+        max-width: 1600px;
+        margin: 0 auto;
+}
+
+.footer-icon__container {
         display: flex;
-        position: relative;
-        margin-top: 60px;
-        width: 80vw;
-        left: 57%;
-        transform: translate(-50%, 0);
+        flex-direction: column;
+}
+
+.footer-menu__container {
+        display: flex;
+        align-items: flex-start;
         justify-content: center;
+        padding-top: 3rem;
+        padding-left: 12rem;
         font-size: 13px;
 }
 
@@ -514,4 +539,5 @@ footer {
         margin-top: 94px;
         font-size: 14px;
         color: #808080;
+        margin-bottom: 3rem;
 }
